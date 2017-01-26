@@ -24,12 +24,25 @@
         android:id="@+id/editTextValor2"
         android:hint="Ingrese el segundo numero:" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sumar"
-        android:id="@+id/buttonSumar"
-        android:onClick="sumar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sumar"
+                android:id="@+id/buttonSumar"
+                android:onClick="sumar" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restar"
+            android:id="@+id/buttonRestar"
+            android:onClick="restar" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"

@@ -30,7 +30,13 @@ public class MainActivity extends AppCompatActivity {
     public void sumar(View target){
         Float valor1 = Float.valueOf(etValor1.getText().toString());
         Float valor2 = Float.valueOf(etValor2.getText().toString());
-        Float resultado = valor1 + valor2;
-        tvResultado.setText(""+resultado);
+        tvResultado.setText(String.valueOf(valor1+valor2));
+    }
+
+    public void restar(View target){
+        Float valor1= Float.valueOf(etValor1.getText().toString());
+        Float valor2= Float.valueOf(etValor2.getText().toString());
+        tvResultado.setText(String.valueOf(valor1-valor2));
+
     }
 }
